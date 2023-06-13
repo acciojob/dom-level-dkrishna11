@@ -1,11 +1,10 @@
-//your JS code here. If required.
-let li=document.getElementByTagName("li");
-li.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
   const element = document.getElementById("level");
   let level = 0;
 
-  while (element.parentNode) {
-    element = element.parentNode;
+  let parent = element.parentNode;
+  while (parent !== document.body) {
+    parent = parent.parentNode;
     level++;
   }
 
