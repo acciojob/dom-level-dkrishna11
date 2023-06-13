@@ -1,5 +1,6 @@
 //your JS code here. If required.
-document.addEventListener("DOMContentLoaded", function() {
+let li=document.getElementByTagName("li");
+li.addEventListener("DOMContentLoaded", function() {
   const element = document.getElementById("level");
   let level = 0;
 
